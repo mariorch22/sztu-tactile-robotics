@@ -48,7 +48,7 @@ def build_model(config):
         geom = root.find(f'.//geom[@name="{spec.name}_tactile_geom"]')
         parent = next(body for body in root.iter("body") if geom in list(body))
         visual = deepcopy(geom)
-        visual.set("name", f"{spec.name}_visual")
+        erkl.set("name", f"{spec.name}_visual")
         visual.set("contype", "0")
         visual.set("conaffinity", "0")
         parent.append(visual)
