@@ -2,7 +2,7 @@
 
 **Course:** SZTU Tactile Robotics
 
-The course files are in this repository. After setup, return to [Lab 1](README.md) and run the included verification script from the repository root.
+The course files are in this repository. After setup, return to [Lab 1](../README.md) and run the included verification script from the repository root.
 
 **Target Environment:** Windows Host $\rightarrow$ VMware Workstation Pro $\rightarrow$ Ubuntu 22.04 LTS $\rightarrow$ ROS 2 Humble $\rightarrow$ MuJoCo
 

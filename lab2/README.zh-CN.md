@@ -152,5 +152,3 @@ python lab2/examples/parameters.py --controller student
 在这个位置打开 `curves.png` 看力度和高度曲线，打开 `heatmap.png` 看触觉图。
 
 如果没有打开窗口，检查命令中是否加了 `--headless` 或 `--compare`；这两个选项会关闭图形窗口。若提示 `No ... display is available`，请在有桌面的电脑终端运行。
-
-教师现场演示可使用 [简短英文讲稿](TEACHING_SCRIPT.md) 或 [中文课堂讲稿](TEACHING_SCRIPT.zh-CN.md)。模型原理、评分规则或自动对比命令可查看 [教师参考](TEACHER_NOTES.md) 和 [验证记录](VALIDATION.md)。

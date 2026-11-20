@@ -200,7 +200,7 @@ These are similar-motion, single-held-out-parent results. They do not establish 
 
 ![Measured test prediction](figures/measured_test_predictions.png)
 
-Detailed configuration, environment and interpretation: [reference results](REFERENCE_RESULTS.md). The checked-in figures are curated teaching references; newly generated runs and model checkpoints live under ignored `lab4/outputs/`.
+Detailed configuration, environment and interpretation: [reference results](datasets/README.md). The checked-in figures are curated teaching references; newly generated runs and model checkpoints live under ignored `lab4/outputs/`.
 
 ## 8. Change parameters and regenerate more examples
 
@@ -250,7 +250,7 @@ Keep the teacher's parent split. Do not randomly split adjacent frames or descen
 
 Submit a three-axis prediction figure, a latent-space figure, a parameter/error table and answers to two questions: Why can history help with lag? Why can a direct MLP beat a latent mapper? Why is sensor self-reconstruction not prediction? Why do 300 variants still have only five parent recordings?
 
-Implementation entry points are `prepare.py`, `models.py`, `data.py`, `train.py`, `predict.py`, `replay.py`, and `verify.py`. Teacher-only source compaction is in `import_source.py`. Model/data attribution is in [THIRD_PARTY.md](THIRD_PARTY.md).
+Implementation entry points are `prepare.py`, `models.py`, `data.py`, `train.py`, `predict.py`, `replay.py`, and `verify.py`. Teacher-only source compaction is in `import_source.py`. Model/data attribution is in [data and model provenance](replay_assets/README.md).
 
 Validation commands:
 

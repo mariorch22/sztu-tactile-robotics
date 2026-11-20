@@ -152,5 +152,3 @@ After you close the window, the terminal shows:
 Open `curves.png` in that folder to see the force and height graphs. Open `heatmap.png` to see the touch heatmap.
 
 If no window appears, check whether your command includes `--headless` or `--compare`. Both turn off the graphical window. If you see `No ... display is available`, run from a terminal on a computer with a desktop display.
-
-Teachers can use the short [English demo script](TEACHING_SCRIPT.md) or the [Chinese walkthrough script](TEACHING_SCRIPT.zh-CN.md). The [teacher notes](TEACHER_NOTES.md) and [validation record](VALIDATION.md) cover model details, scoring rules, and automatic comparison commands in Chinese.

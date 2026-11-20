@@ -71,7 +71,7 @@ dexh13-tactile-sim/
 │   ├── fit_tactile_calibration.py           # 拟合 RBF 和响应参数
 │   └── evaluate_tactile_calibration.py      # 评估标定误差
 ├── tests/                                   # 自动测试
-├── docs/vendor/                             # 技术路线和厂家 PDF 文档归档
+├── docs/vendor/                             # 厂家 PDF 手册
 ├── environment.yml
 ├── pyproject.toml
 └── README.md
@@ -129,7 +129,7 @@ flowchart LR
 ### macOS
 
 ```bash
-cd /Users/arick/dexh13-tactile-sim
+cd /path/to/sztu-tactile-robotics/dexh13-tactile-sim-dex13simv1
 conda env create -f environment.yml
 conda activate dexh13sim
 python -m pip install -e ".[dev]"
@@ -139,7 +139,7 @@ pytest
 如果环境已经存在：
 
 ```bash
-cd /Users/arick/dexh13-tactile-sim
+cd /path/to/sztu-tactile-robotics/dexh13-tactile-sim-dex13simv1
 conda activate dexh13sim
 conda env update -f environment.yml --prune
 python -m pip install -e ".[dev]"
@@ -149,7 +149,7 @@ pytest
 macOS 下 MuJoCo passive viewer 必须用 `mjpython` 启动 GUI：
 
 ```bash
-cd /Users/arick/dexh13-tactile-sim
+cd /path/to/sztu-tactile-robotics/dexh13-tactile-sim-dex13simv1
 conda activate dexh13sim
 mjpython scripts/view_tactile_live.py
 ```
@@ -157,7 +157,7 @@ mjpython scripts/view_tactile_live.py
 如果 shell 找不到 `mjpython`，可以使用 Conda 环境里的绝对路径：
 
 ```bash
-/Users/arick/miniconda3/envs/dexh13sim/bin/mjpython scripts/view_tactile_live.py
+"$CONDA_PREFIX/bin/mjpython" scripts/view_tactile_live.py
 ```
 
 ### Linux

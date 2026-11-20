@@ -8,7 +8,7 @@ Read [lab1.pdf](lab1.pdf), the Lab 1 slides.
 
 ## Step 2: Set up your environment
 
-If you are using Windows with an Ubuntu virtual machine, follow [install.md](install.md).
+If you are using Windows with an Ubuntu virtual machine, follow the [installation guide](setup/README.md).
 
 If your course Python environment is already ready, activate it and continue below.
 
@@ -35,8 +35,6 @@ If the Ubuntu VM shows a black window, try:
 ```bash
 LIBGL_ALWAYS_SOFTWARE=1 python lab1/test_hand.py
 ```
-
-You can also follow the short [verification checklist](verification.md).
 
 ## Next
 

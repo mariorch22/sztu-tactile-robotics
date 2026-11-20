@@ -2,7 +2,7 @@
 
 [English](README.md) · [中文 Notebook](practice.ipynb) · [English notebook](practice.en.ipynb)
 
-[中文导入幻灯片](slides/index.html) · [英文扩展版：MLP 与 latent](slides/index.en.html) · [中文讲稿](slides/SPEAKER_NOTES.zh-CN.md) · [英文讲稿](slides/SPEAKER_NOTES.en.md)
+[中文导入幻灯片](slides/index.html) · [英文扩展版：MLP 与 latent](slides/index.en.html) · [幻灯片使用说明](slides/README.md)
 
 本实验使用已录制的机器人运动获得仿真几何，先用 MLP 预测三轴触觉信号，再将直接预测拆成 **仿真 encoder → latent 映射 → 传感器 decoder**。学生不需要新增真机采集。
 
@@ -200,7 +200,7 @@ python -m lab4.predict --model lab4/outputs/measured_run1/models.pt --features l
 
 ![实测测试预测](figures/measured_test_predictions.png)
 
-完整配置、环境和结果解读见 [参考结果](REFERENCE_RESULTS.md)。仓库只保留选定的教学参考图；新实验与模型 checkpoint 都写入已忽略的 `lab4/outputs/`。
+完整配置、环境和结果解读见 [参考结果](datasets/README.md)。仓库只保留选定的教学参考图；新实验与模型 checkpoint 都写入已忽略的 `lab4/outputs/`。
 
 ## 8. 改参数、生成更多数据
 
@@ -250,7 +250,7 @@ python -m lab4.prepare --out lab4/outputs/regenerated --variants 60 --seed 42
 
 提交一张三轴预测图、一张 latent 图、一张参数/误差表，并回答两个问题：历史为什么可能帮助滞后预测？MLP 为什么可能胜过 latent 映射？自重建为什么不是跨模态预测？300 个变体为什么仍只有五条原始记录？
 
-实现入口是 `prepare.py`、`models.py`、`data.py`、`train.py`、`predict.py`、`replay.py`、`verify.py`；教师原始数据整理工具为 `import_source.py`。模型与数据来源见 [THIRD_PARTY.md](THIRD_PARTY.md)。
+实现入口是 `prepare.py`、`models.py`、`data.py`、`train.py`、`predict.py`、`replay.py`、`verify.py`；教师原始数据整理工具为 `import_source.py`。模型与数据来源见 [模型与数据来源](replay_assets/README.md)。
 
 验证命令：
 

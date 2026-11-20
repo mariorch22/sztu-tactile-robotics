@@ -43,10 +43,10 @@
 
 ### 2.1 macOS / Linux
 
-本机路径：
+从仓库根目录运行：
 
 ```bash
-cd /Users/alaia/Developer/Pacini_Course/lab3/tactile_analysis
+cd lab3/tactile_analysis
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[cli]'
@@ -624,6 +624,4 @@ python -m unittest discover -s tests -v
 
 测试包括分块与字符串无损转换、哈希损坏拒绝、ZIP/目录/HDF5 数值等价、raw 有效性与 CLI 输出、已知面积/压力算术、非 z 法向、逐点标定、不同点面积的加权平均、无效帧和 mask 不提升、模拟标定不能用于真实数据等。另有中文帮助、参数报错、质量/分析/转换摘要和 `--json` 兼容性检查；当前共 39 项。
 
-实际记录的原始诊断见 [REPORT.zh-CN.md](reports/teleop_20261021T090120_798e4203/REPORT.zh-CN.md)，它记录当时的检查结果，当前入口和命令以本 README 为准。压力单位定义参考 [NIST 的 SI 单位表](https://www.nist.gov/pml/special-publication-330/sp-330-appendix-1)：Pa = N/m²，因此 N/mm² 转成 Pa 乘以 10⁶。
-
-本地实跑验证产物归档在 `analysis_out/readme_validation/`，教程中的主要输出路径已留给你首次执行时创建。验证归档中的来源路径是生成时的历史路径，移动记录见 `relocations.json`。
+压力单位定义参考 [NIST 的 SI 单位表](https://www.nist.gov/pml/special-publication-330/sp-330-appendix-1)：Pa = N/m²，因此 N/mm² 转成 Pa 乘以 10⁶。

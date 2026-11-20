@@ -43,10 +43,10 @@ Run **all commands below from `lab3/tactile_analysis`**. Do not mix repository-r
 
 ### 2.1 macOS / Linux
 
-On the current machine:
+From the repository root:
 
 ```bash
-cd /Users/alaia/Developer/Pacini_Course/lab3/tactile_analysis
+cd lab3/tactile_analysis
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[cli]'
@@ -624,6 +624,4 @@ python -m unittest discover -s tests -v
 
 Coverage includes lossless chunk/string conversion, corruption rejection, ZIP/directory/HDF5 equivalence, raw validity and CLI outputs, known area/pressure arithmetic, non-z normals, per-taxel calibration, unequal-area weighted pressure, invalid frames, no validity promotion, and rejection of synthetic calibration on real input. Chinese help, argument errors, quality/analysis/conversion summaries, and `--json` compatibility are also checked; there are currently 39 tests.
 
-The real-recording audit is in [REPORT.zh-CN.md](reports/teleop_20261021T090120_798e4203/REPORT.zh-CN.md). It describes the historical inspection; use this README for current commands and entry points. Pressure units follow the [NIST SI unit table](https://www.nist.gov/pml/special-publication-330/sp-330-appendix-1): Pa = N/m², so converting N/mm² to Pa multiplies by 10⁶.
-
-Local command-validation outputs are archived in `analysis_out/readme_validation/`, leaving the main tutorial destinations available for your first run. Archived provenance paths describe the original generation locations; see `relocations.json` for relocations.
+Pressure units follow the [NIST SI unit table](https://www.nist.gov/pml/special-publication-330/sp-330-appendix-1): Pa = N/m², so converting N/mm² to Pa multiplies by 10⁶.

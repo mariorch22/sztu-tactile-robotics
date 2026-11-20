@@ -1,6 +1,6 @@
 # Lab 4 reference results / 参考结果
 
-2026-11-05 (Asia/Shanghai). Machine-readable scores, versions, source hashes and parent splits are in [reference_metrics.json](reference_metrics.json).
+2026-11-05 (Asia/Shanghai). Machine-readable scores, versions, source hashes and parent splits are in [reference_metrics.json](../reference_metrics.json).
 
 ## English
 
@@ -35,8 +35,8 @@ parts of the measured response. Synthetic pairs use an additional fixed fixture
 translation and synthetic timing, with an analytic signal model. They do not
 establish accurate MuJoCo force reproduction.
 
-Curated plots are stored in `figures/`. Full run outputs, model checkpoints and
-local validation logs are intentionally kept in ignored `outputs/`; the README
+Curated plots are stored in `../figures/`. Full run outputs, model checkpoints and
+local validation logs are intentionally kept in ignored `../outputs/`; the README
 commands reproduce them. No developer-specific absolute path is needed.
 
 ## 中文
@@ -58,5 +58,5 @@ commands reproduce them. No developer-specific absolute path is needed.
 信息仍能预测部分实测响应。合成实验额外加入固定工装平移与合成时间轴，并用
 解析信号模型生成输出，不能把其成绩解释为 MuJoCo 三轴力已准确复现。
 
-选定的参考图放在 `figures/`。完整运行输出、权重和本机验证日志放在 Git 忽略的
-`outputs/`；按 README 命令可以重新生成，无需教师电脑的绝对路径。
+选定的参考图放在 `../figures/`。完整运行输出、权重和本机验证日志放在 Git 忽略的
+`../outputs/`；按 README 命令可以重新生成，无需教师电脑的绝对路径。

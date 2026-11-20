@@ -11,6 +11,11 @@ Start with Lab 1 to set up your computer. Then follow Lab 2 to change an object,
 | Lab 3 | Inspect tactile recordings, timestamps, validity and calibration | [English](lab3/tactile_analysis/README.en.md) / [简体中文](lab3/tactile_analysis/README.md) |
 | Lab 4 | Replay recorded motion, train an MLP, and translate simulation latents into sensor latents | [English](lab4/README.md) / [简体中文](lab4/README.zh-CN.md) |
 
+## Assignments
+
+Submit two individual reports (Labs 1–2 and Labs 3–4) and one team project report.
+See the [实验报告要求 / Assignment brief](assignments/README.md) for tasks and deliverables.
+
 ## First time here?
 
 1. Download or clone this repository.
@@ -40,12 +45,13 @@ python lab2/examples/parameters.py --controller student
 ## Course files
 
 ```text
+assignments/                       Report and team project requirements
 lab1/                              Setup guide, verification script, and slides
 lab2/                              Tactile grasping experiment
 lab3/tactile_analysis/              Tactile recording analysis
 lab4/                              Replay, MLP, autoencoders and latent translation
 dexh13-tactile-sim-dex13simv1/       Shared hand model and simulation assets
-docs/                              Development conventions and teacher materials
+docs/teacher/                      Earlier slide deck
 ```
 
 Lab 1 slides: [lab1.pdf](lab1/lab1.pdf).
@@ -59,6 +65,11 @@ installation and the quick start, follow the [Lab 4 guide](lab4/README.md).
 
 Keep the complete repository together. Lab 2 uses the shared hand model next to it. Each run saves its results locally; generated results are excluded from Git.
 
-For contributors, see [development conventions](docs/DEVELOPMENT.md). Earlier teaching materials are kept in [teacher references](docs/teacher/README.md).
+Earlier slides are available in [teacher references](docs/teacher/README.md).
 
-Recommended GitHub repository name: `sztu-tactile-robotics`.
+## Repository contents
+
+Track course code and dependencies, README guides, curated datasets and model assets,
+README illustrations, and finished slides (HTML/PPTX) and PDFs. Keep local preparation
+notes, presentation build files, chat exports, prompts, caches and experiment outputs
+out of Git; `.gitignore` covers these working files.
